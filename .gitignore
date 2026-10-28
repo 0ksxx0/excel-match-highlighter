@@ -4,6 +4,12 @@ __pycache__/
 .venv/
 venv/
 
+# Generated release artifacts
+/releases/
+/build/
+/dist/
+*.spec
+
 # Local business workbooks and generated results
 *.[xX][lL][sS][xX]
 *.[xX][lL][sS][mM]

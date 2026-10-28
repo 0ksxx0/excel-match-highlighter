@@ -23,6 +23,21 @@
 
 下文以 Windows PowerShell 为例。在脚本所在目录打开终端后运行命令。
 
+## Windows 便携版
+
+不想安装 Python 时，可以下载发行附件 `excel-column-matcher-v1.0.0-windows-x64.zip`，完整解压后双击 `Start.bat`。这是控制台交互程序，运行结束后窗口会保留，便于查看结果。
+
+便携版面向 Windows 10/11 的 x64 环境，已在 Windows 10 x64 上验证；其他系统可使用源码版。包内仅包含通用配置，实际 Excel 文件需自行准备。按提示填写自己的文件和工作表，或将 `match_config.example.json` 复制为 `match_config.json` 后修改。
+
+在便携版目录中也可以使用 PowerShell：
+
+```powershell
+.\excel-column-matcher.exe --config .\match_config.json --dry-run
+.\excel-column-matcher.exe --config .\match_config.json --write
+```
+
+配置文件放在 EXE 同级目录，避免放入临时解压目录。`--dry-run` 只做检查；`--write` 生成新的标黄副本。
+
 ## 文件说明
 
 ```text

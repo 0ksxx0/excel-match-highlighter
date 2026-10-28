@@ -1,0 +1,22 @@
+{
+  "target": {
+    "file": "target.xlsx",
+    "sheet": "参数表",
+    "header_row": 1,
+    "key_columns": ["参数Code", "监听端口", "寄存器地址"],
+    "mark_columns": ["参数Code", "监听端口", "寄存器地址"]
+  },
+  "source": {
+    "file": "source.xlsx",
+    "sheets": ["来源表A", "来源表B"],
+    "header_row": 1,
+    "key_columns": ["点位编码", "点位对应端口号", "点位寄存器地址"]
+  },
+  "normalizers": ["code", "number", "number"],
+  "output": "result_highlighted.xlsx",
+  "options": {
+    "dry_run": true,
+    "require_all_source_keys_to_match": false,
+    "max_unmatched_keys": 20
+  }
+}

@@ -1,0 +1,21 @@
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local business workbooks and generated results
+*.[xX][lL][sS][xX]
+*.[xX][lL][sS][mM]
+*.[xX][lL][sS]
+~$*
+
+# Local configuration and original project notes
+/match_config.json
+/match_config.local*.json
+/使用说明.md
+
+# Local environment variables
+.env
+.env.*
+!.env.example
